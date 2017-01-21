@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<% include partials/header.ejs %>
+<form method="post" action="/users/login">
+    <label for="username">Username<br>
+        <input type="text" name="username" placeholder="enter username"><br>
+    </label>
+    <label for="password">Password<br>
+        <input type="password" name="password" placeholder="enter password"><br>
+    </label>
+
+    <input type="submit" value="submit">
+    <h1>dont have an account register <a href="/users/register">here</a> </h1>
+</form>
+</body>
+</html>
